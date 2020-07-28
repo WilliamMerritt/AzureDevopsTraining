@@ -8,7 +8,7 @@ on:
 name: Lab_2_IaaS
 
 env:
-  RG_NAME: rg-lab-2
+  RG_NAME: azuredevopstraining2
   LOCATION: eastus2
 
 jobs:
@@ -20,7 +20,7 @@ jobs:
     - name: Azure Login
       uses: azure/login@v1
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        creds: ${{ secrets.AZUREVISUALSTUDIOSUBSCRIPTION}}
 
     - name: Checkout Code
       uses: actions/checkout@v2
